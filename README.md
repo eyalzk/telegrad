@@ -1,6 +1,8 @@
 # DL-Bot
 ## A Telegram bot to monitor and control your deep learning training process
-
+This repo contains a simple to use API to setup a Telegram bot to monitor and control your deep learning training process.
+Deep learning training can take long hours and even days. This tool will let you track the training progress and respond accordingly, all through your phone.
+You will be able to get updates, change learning rates, plot convergence graphs and more.
 ### Features
 To start interacting with the bot, send `/start`.  At any time you can send `/help` to see all available commands.
 
@@ -12,28 +14,28 @@ Once you send `/start` from your Telegram app, the bot will send you updates eve
 
 
 
-You can stop getting these automatic updates by sending `/quiet`:
-![](images/IMG-7.JPG)
+You can stop getting these automatic updates by sending `/quiet`:  
+<img src="images/IMG-7.JPG" alt="IMG-7" width="300"/>
 To turn updates back on, send `/start` again.
-At any time (even on quiet mode), send `/status` to get the update of the latest epoch:
-![](images/IMG-8.JPG)
+At any time (even on quiet mode), send `/status` to get the update of the latest epoch:  
+<img src="images/IMG-8.JPG" alt="IMG-8" width="300"/>
 
 ##### Modifying the learning rate:
-If your model's convergence plateaus, and you want to change the learning rate of your optimizer, simply send `/setlr`:
-![](images/IMG-9.JPG)
-![](images/IMG-10.JPG)
+If your model's convergence plateaus, and you want to change the learning rate of your optimizer, simply send `/setlr`:  
+<img src="images/IMG-9.JPG" alt="IMG-9" width="300"/><br>
+<img src="images/IMG-10.JPG" alt="IMG-10" width="300"/>
 
 You can also query the current learning rate at any time by sending `\getlr`:
-![](images/IMG-11.JPG)
+<img src="images/IMG-11.JPG" alt="IMG-11" width="300"/>
 
 ##### Plotting convergence graphs
 To get a convergence plot of the loss, send `/plot` from the app:
- ![](images/IMG-12.JPG)
+ <img src="images/IMG-12.JPG" alt="IMG-12" width="300"/>
 
 ##### Stop training process
 If you want, you can stop your training process from the app. Just send `/stoptraining` and click on the Yes button.
 With the Keras callback, training is stopped safely. Other operations that needed to happen after training still take place:
-![](images/IMG-13.JPG)
+<img src="images/IMG-13.JPG" alt="IMG-13" width="300"/>
 
  
 ### Dependencies
@@ -125,17 +127,17 @@ Both examples include all bot functions over the official keras/tf examples of t
 To create a Telegram bot using the Telegram app, follow these steps:
 1. Open the Telegram app
 2. Search for the BotFather user (@botfather):
-![](images/IMG-1.JPG)
+<img src="images/IMG-1.JPG" alt="IMG-1" width="300"/>
 3. Start a conversation with BotFather and click on `start`
 4. Send /newbot and follow instructions on screen:
-![](images/IMG-2.JPG)
-5. Copy the bot token, you will need it when using the DL-Bot (you can send it to yourself by email for instance):
-![](images/IMG-3.JPG)
+<img src="images/IMG-2.JPG" alt="IMG-2" width="300"/>
+5. Copy the bot token, you will need it when using the DL-Bot (you can send it to yourself by email for instance):  
+<img src="images/IMG-3.JPG" alt="IMG-3" width="300"/>
 
 ##### Finding your Telegram user id:
 1. Open the Telegram app
 2. Search for the userinfobot user (@userinfobot):
-![](images/IMG-4.png)
+<img src="images/IMG-4.png" alt="IMG-5" width="300"/>
 3. Start a conversation with the bot and get your user id
 
 ### References
