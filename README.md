@@ -26,7 +26,7 @@ If your model's convergence plateaus, and you want to change the learning rate o
 <img src="images/IMG-9.JPG" alt="IMG-9" width="300"/><br>
 <img src="images/IMG-10.JPG" alt="IMG-10" width="300"/>
 
-You can also query the current learning rate at any time by sending `\getlr`:  
+You can also query the current learning rate any time by sending `\getlr`:  
 <img src="images/IMG-11.JPG" alt="IMG-11" width="300"/>
 
 ##### Plotting convergence graphs
@@ -35,7 +35,7 @@ To get a convergence plot of the loss, send `/plot` from the app:
 
 ##### Stop training process
 If you want, you can stop your training process from the app. Just send `/stoptraining` and click on the Yes button.
-With the Keras callback, training is stopped safely. Other operations that needed to happen after training still take place:
+With the Keras callback, training is stopped safely. Other operations that needed to happen after training will still take place:
 <img src="images/IMG-13.JPG" alt="IMG-13" width="300"/>
 
  
@@ -66,7 +66,7 @@ It is very simple, just follow the steps in the dedicated section below.
 Once you have created your bot, search for it and start a conversation with it on the Telegram app.
 
 You can supply a `user_id` to restrict interaction with your bot only to a specific user. This is highly recommended.
-( Instructions on how to find your user id provided below)
+(Instructions on how to find your user id are provided below)
 
 You can either use the Keras callback to automatically interact with the bot, or to customize the interactions yourself.  
 __Note that the bot will start sending messages only after you send it the `/start` message from the app.__
@@ -101,7 +101,7 @@ That's all, you are good to go!
 
 __An example usage is included in `keras_mnist_example.py`__
 #### Custom messages
-If you are using TensorFlow (or using Keras and you want to customize the interactions with the bot). Start by including the following code in your script:
+If you are using TensorFlow (or using Keras and want to customize interactions with the bot). Start by including the following code in your script:
 ```python
 # Telegram Bot imports
 from dl_bot import DLBot
@@ -116,12 +116,12 @@ bot = DLBot(token=telegram_token, user_id=telegram_user_id)
 # Activate the bot
 bot.activate_bot()
 ```
-Then you will need to implement responses for the `/setlr`, `/getlr`, `/status`, `/stoptraining`,`/quiet` messages.
-In addition, you will need to send the loss values in order to use the `/plot` command.  
+Then you will need to implement responses for the `/setlr`, `/getlr`, `/status`, `/stoptraining`,`/quiet` messages.  
+Also, you will need to send the bot the loss values each epoch in order to use the `/plot` command.  
 It is fairly easy to include these responses, a full example is included in `tf_mnist_example.py`   
 ### Examples
 Implementation examples are included for both Keras and TensorFlow in `keras_mnist_example.py` and `tf_mnist_example.py`.
-Both examples include all bot functions over the official keras/tf examples of training on the MNIST dataset. 
+Both examples include all bot functions over the official keras/tf MNIST examples. 
 
 
 ##### Creating a Telegram bot
@@ -129,10 +129,10 @@ To create a Telegram bot using the Telegram app, follow these steps:
 1. Open the Telegram app
 2. Search for the BotFather user (@botfather):
 <img src="images/IMG-1.JPG" alt="IMG-1" width="300"/>
-3. Start a conversation with BotFather and click on `start`
+3. Start a conversation with BotFather and click on `start`  
 4. Send /newbot and follow instructions on screen:
 <img src="images/IMG-2.JPG" alt="IMG-2" width="300"/>
-5. Copy the bot token, you will need it when using the DL-Bot (you can send it to yourself by email for instance):  
+5. Copy the bot token, you will need it when using the DL-Bot:  
 <img src="images/IMG-3.JPG" alt="IMG-3" width="300"/>
 
 ##### Finding your Telegram user id:
