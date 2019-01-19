@@ -6,8 +6,11 @@ To start interacting with the bot, send `/start`.  At any time you can send `/he
 
 ##### Automatic Epoch Updates:
 Once you send `/start` from your Telegram app, the bot will send you updates every epoch:
-![](images/IMG-5.JPG)
-![](images/IMG-6.JPG)
+
+<img src="images/IMG-5.JPG" alt="IMG-5" width="300"/>  <br>
+<img src="images/IMG-6.JPG" alt="IMG-6" width="300"/>
+
+
 
 You can stop getting these automatic updates by sending `/quiet`:
 ![](images/IMG-7.JPG)
