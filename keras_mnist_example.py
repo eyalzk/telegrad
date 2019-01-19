@@ -21,13 +21,14 @@ from keras import backend as K
   add telegram_callback to the list of        
   callbacks passed to model.fit       """
 
- # Telegram Bot imports
-from dl_bot import DLBot, TelegramBotCallback
+# Telegram Bot imports
+from dl_bot import DLBot
+from telegram_bot_callback import TelegramBotCallback
 
 telegram_token = "TOKEN"  # replace TOKEN with your bot's token
-# replace None with your telegram user id (integer):
-#  This is optional, however highly recommended as it limits the access to you alone.
-telegram_user_id = None
+
+# user id is optional, however highly recommended as it limits the access to you alone.
+telegram_user_id = None   # replace None with your telegram user id (integer):
 
 # Create a DLBot instance
 bot = DLBot(token=telegram_token, user_id=telegram_user_id)

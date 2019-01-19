@@ -25,14 +25,14 @@ from tensorflow.examples.tutorials.mnist import mnist
 # Telegram Bot imports
 from dl_bot import DLBot
 
-
 telegram_token = "TOKEN"  # replace TOKEN with your bot's token
 
-# replace None with your telegram user id (integer):
-#  This is optional, however highly recommended as it limits the access to you alone.
-telegram_user_id = None
+# user id is optional, however highly recommended as it limits the access to you alone.
+telegram_user_id = None   # replace None with your telegram user id (integer):
+
 # Create a DLBot instance
 bot = DLBot(token=telegram_token, user_id=telegram_user_id)
+# Activate the bot
 bot.activate_bot()
 # Basic model parameters as external flags.
 FLAGS = None
