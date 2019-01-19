@@ -129,7 +129,8 @@ To create a Telegram bot using the Telegram app, follow these steps:
 1. Open the Telegram app
 2. Search for the BotFather user (@botfather):
 <img src="images/IMG-1.JPG" alt="IMG-1" width="300"/>
-3. Start a conversation with BotFather and click on `start`  
+3. Start a conversation with BotFather and click on `start`   
+
 4. Send /newbot and follow instructions on screen:
 <img src="images/IMG-2.JPG" alt="IMG-2" width="300"/>
 5. Copy the bot token, you will need it when using the DL-Bot:  
