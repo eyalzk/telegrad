@@ -2,7 +2,37 @@
 ## A Telegram bot to monitor and control your deep learning training process
 
 ### Features
+To start interacting with the bot, send `/start`.  At any time you can send `/help` to see all available commands.
 
+##### Automatic Epoch Updates:
+Once you send `/start` from your Telegram app, the bot will send you updates every epoch:
+![](images/IMG-5.JPG)
+![](images/IMG-6.JPG)
+
+You can stop getting these automatic updates by sending `/quiet`:
+![](images/IMG-7.JPG)
+To turn updates back on, send `/start` again.
+At any time (even on quiet mode), send `/status` to get the update of the latest epoch:
+![](images/IMG-8.JPG)
+
+##### Modifying the learning rate:
+If your model's convergence plateaus, and you want to change the learning rate of your optimizer, simply send `/setlr`:
+![](images/IMG-9.JPG)
+![](images/IMG-10.JPG)
+
+You can also query the current learning rate at any time by sending `\getlr`:
+![](images/IMG-11.JPG)
+
+##### Plotting convergence graphs
+To get a convergence plot of the loss, send `/plot` from the app:
+ ![](images/IMG-12.JPG)
+
+##### Stop training process
+If you want, you can stop your training process from the app. Just send `/stoptraining` and click on the Yes button.
+With the Keras callback, training is stopped safely. Other operations that needed to happen after training still take place:
+![](images/IMG-13.JPG)
+
+ 
 ### Dependencies
    - [python-telegram-bot](https://github.com/python-telegram-bot/python-telegram-bot)
    - Keras (optional, if you want to use the Keras callback)
@@ -27,6 +57,7 @@
 ### Usage
 First, create a Telegram bot using the Telegram app.
 It is very simple, just follow the steps in the dedicated section below.
+Once you have created your bot, search for it and start a conversation with it on the Telegram app.
 
 You can supply a `user_id` to restrict interaction with your bot only to a specific user. This is highly recommended.
 ( Instructions on how to find your user id provided below)
