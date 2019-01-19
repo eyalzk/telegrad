@@ -1,7 +1,7 @@
 # DL-Bot
 ## A Telegram bot to monitor and control your deep learning training process
 This repo contains a simple to use API to setup a Telegram bot to monitor and control your deep learning training process.
-Deep learning training can take long hours and even days. This tool will let you track the training progress and respond accordingly, all through your phone.
+Deep learning training can take long hours and even days. This tool will let you track the training progress and respond accordingly, all through your phone!
 You will be able to get updates, change learning rates, plot convergence graphs and more.
 ### Features
 To start interacting with the bot, send `/start`.  At any time you can send `/help` to see all available commands.
@@ -16,7 +16,8 @@ Once you send `/start` from your Telegram app, the bot will send you updates eve
 
 You can stop getting these automatic updates by sending `/quiet`:  
 <img src="images/IMG-7.JPG" alt="IMG-7" width="300"/>
-To turn updates back on, send `/start` again.
+
+To turn updates back on, send `/start` again.  
 At any time (even on quiet mode), send `/status` to get the update of the latest epoch:  
 <img src="images/IMG-8.JPG" alt="IMG-8" width="300"/>
 
@@ -25,11 +26,11 @@ If your model's convergence plateaus, and you want to change the learning rate o
 <img src="images/IMG-9.JPG" alt="IMG-9" width="300"/><br>
 <img src="images/IMG-10.JPG" alt="IMG-10" width="300"/>
 
-You can also query the current learning rate at any time by sending `\getlr`:
+You can also query the current learning rate at any time by sending `\getlr`:  
 <img src="images/IMG-11.JPG" alt="IMG-11" width="300"/>
 
 ##### Plotting convergence graphs
-To get a convergence plot of the loss, send `/plot` from the app:
+To get a convergence plot of the loss, send `/plot` from the app:  
  <img src="images/IMG-12.JPG" alt="IMG-12" width="300"/>
 
 ##### Stop training process
