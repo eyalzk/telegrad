@@ -1,6 +1,5 @@
-# DL-Bot
-## A Telegram bot to monitor and control deep learning experiments
-<img align="right" style="float: right;" width="300" height="520" src="images/use_vid.gif"> 
+# TeleGrad 
+## Telegram bot to monitor and control deep learning experiments
 
 This repo contains a simple to use API to setup a Telegram bot that will monitor and control your deep learning experiments.
 Deep learning training can take long hours and even days. This tool will let you track the training progress and respond accordingly, all through your phone!
