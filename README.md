@@ -1,5 +1,7 @@
 # DL-Bot
 ## A Telegram bot to monitor and control deep learning experiments
+<img align="right" style="float: right;" width="300" height="520" src="images/use_vid.gif"> 
+
 This repo contains a simple to use API to setup a Telegram bot that will monitor and control your deep learning experiments.
 Deep learning training can take long hours and even days. This tool will let you track the training progress and respond accordingly, all through your phone!
 You will be able to get updates, change learning rates, plot convergence graphs and more.
