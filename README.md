@@ -3,7 +3,7 @@
 <img align="right" style="float: right;" width="200" src="images/use_vid.gif"> 
  
 Deep learning training processes can run for many hours/days, and not always you are near your station to see how it's progressing or to make adjustments.
-Using this Telegram bot you can seamlessly get constant updates and even control your training process, all through a simple API.
+Using this Telegram bot you can seamlessly get constant updates and even control your training process, all through your phone.
 
 Works with TensorFlow & Keras (with Keras, all you need is to include a dedicated callback).
 Should also be good for Pytorch though I did not try. PRs are welcome!
