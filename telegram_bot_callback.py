@@ -31,11 +31,10 @@ class TelegramBotCallback(Callback):
     """
 
     def __init__(self, kbot):
+        assert isinstance(kbot, DLBot), 'Bot must be an instance of the DLBot class'
         super(TelegramBotCallback, self).__init__()
-        if isinstance(kbot, DLBot):
-            self.kbot = kbot
-        else:
-            raise TypeError('Bot must be an instance of the DLBot class')
+        self.kbot = kbot
+
 
     def on_train_begin(self, logs=None):
         logs['lr'] = K.get_value(self.model.optimizer.lr)  # Add learning rate to logs dictionary

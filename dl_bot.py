@@ -39,6 +39,9 @@ class DLBot(object):
 
 
     def __init__(self, token, user_id=None):
+        assert isinstance(token, str), 'Token must be of type string'
+        assert user_id is None or isinstance(user_id, int), 'user_id must be of type int (or None)'
+
         self.token = token  # bot token
         self.user_id = user_id  # id of the user with access
         self.filters = None
@@ -122,14 +125,15 @@ class DLBot(object):
          # Arguments
             txt: String, the message to be sent
         """
-        assert isinstance(txt, str)
+        assert isinstance(txt, str), 'Message text must be of type string'
         if self.chat_id is not None:
             self.updater.bot.send_message(chat_id=self.chat_id, text=txt)
         else:
             print('Send message failed, user did not send /start')
 
-    def set_status(self,txt):
+    def set_status(self, txt):
         """ Function to set a status message to be returned by the /status command """
+        assert isinstance(txt, str), 'Status Message must be of type string'
         self._status_message = txt
 
     def status(self, bot, update):
