@@ -1,10 +1,22 @@
 # TeleGrad 
 ## Telegram bot to monitor and control deep learning experiments
+<img align="right" style="float: right;" width="200" src="images/use_vid.gif"> 
+ 
+Deep learning training processes can run for many hours/days, and you are not always near your station to see how it's progressing or to make adjustments.
+Using this Telegram bot you can seamlessly get constant updates and even control your training process, all through your phone.
 
-This repo contains a simple to use API to setup a Telegram bot that will monitor and control your deep learning experiments.
-Deep learning training can take long hours and even days. This tool will let you track the training progress and respond accordingly, all through your phone!
-You will be able to get updates, change learning rates, plot convergence graphs and more.
+Works with TensorFlow & Keras (with Keras, all you need is to include a dedicated callback).
+Should also be good for Pytorch though I did not try. PRs are welcome!
+
 ### Features
+- Get per epoch updates on the loss, accuracy etc.
+- Change the learning rate
+- Get loss convergence plots
+- Kill the training process
+- Query the latest LR or metrics
+- Limit access to a specific Telegram user id
+
+<br><br>
 To start interacting with the bot, send `/start`.  At any time you can send `/help` to see all available commands.
 
 ##### Automatic Epoch Updates:
